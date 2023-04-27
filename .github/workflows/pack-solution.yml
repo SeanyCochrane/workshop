@@ -6,7 +6,7 @@ on:
       - contents/**
   workflow_dispatch:
 
-  jobs:
+jobs:
   build:
     runs-on: windows-latest
     steps:
