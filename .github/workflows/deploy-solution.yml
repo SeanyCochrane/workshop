@@ -22,8 +22,8 @@ jobs:
           environment-url: https://org56bc8f2e.crm11.dynamics.com/
 #          user-name: ${{ secrets.USERNAME }}
 #          password-secret: ${{ secrets.PASSWORD }}
-          app-id: ${{ var.CLIENT_ID }}
+          app-id: ${{ env.CLIENT_ID }}
           client-secret: ${{ secrets.DEPLOY_SECRET }}
-          tenant-id: ${{ var.TENANT_ID }}
+          tenant-id: ${{ env.TENANT_ID }}
           solution-file: contoso_university_core_managed.zip
 
