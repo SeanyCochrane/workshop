@@ -6,6 +6,7 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    environment: production
     steps:
       - uses: microsoft/powerplatform-actions/export-solution@v0
         with:
