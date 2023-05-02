@@ -1,5 +1,8 @@
 name: Export Contoso_University_Core
 
+on:
+   workflow_dispatch:
+
 jobs:
   build:
     runs-on: windows-latest
