@@ -16,6 +16,6 @@ jobs:
             tenant-id: ${{ vars.TENANT_ID }}
             solution-name: 'contoso_university_core'
             solution-output-file: '/out/contoso_university_core_Managed.zip'
-            managed: true
+            # managed: true
             # working-directory: 'out'
 
