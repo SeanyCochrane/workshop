@@ -13,3 +13,4 @@ jobs:
         solution-name: 'Contoso University - Core'
         solution-output-file: 'contoso_university_core.zip'
         working-directory: 'out'
+        
