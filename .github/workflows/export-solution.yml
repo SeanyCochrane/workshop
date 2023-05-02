@@ -14,8 +14,8 @@ jobs:
             app-id: ${{ vars.CLIENT_ID }}
             client-secret: ${{ secrets.DEPLOY_SECRET }}
             tenant-id: ${{ vars.TENANT_ID }}
-            solution-name: 'Contoso University - Core'
-            solution-output-file: '/out/Contoso_University_Core_Managed.zip'
+            solution-name: 'contoso_university_core'
+            solution-output-file: '/out/contoso_university_core_Managed.zip'
             managed: true
             # working-directory: 'out'
 
