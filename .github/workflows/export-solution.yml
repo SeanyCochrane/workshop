@@ -8,14 +8,17 @@ jobs:
     runs-on: windows-latest
     environment: production
     steps:
-      - uses: microsoft/powerplatform-actions/export-solution@v0
+    -   uses: actions/checkout@v2
+        with:
+          lfs: true
+    -   uses: microsoft/powerplatform-actions/export-solution@v0
         with:
             environment-url: https://org56bc8f2e.crm11.dynamics.com/
             app-id: ${{ vars.CLIENT_ID }}
             client-secret: ${{ secrets.DEPLOY_SECRET }}
             tenant-id: ${{ vars.TENANT_ID }}
             solution-name: 'contoso_university_core'
-            solution-output-file: 'contoso_university_core-out.zip'
+            solution-output-file: 'out/exported/contoso_university_core-out.zip'
             # managed: true
             # working-directory: 'out'
 
