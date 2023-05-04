@@ -21,4 +21,3 @@ jobs:
             solution-output-file: 'out/exported/contoso_university_core-out.zip'
             # managed: true
             # working-directory: 'out'
-
