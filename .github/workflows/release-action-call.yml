@@ -9,7 +9,6 @@ permissions:
   contents: write
 jobs:
   Release-solution-contoso_university_core:
-    environment: production
     uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
     with:
       #You can specify the solution name here
@@ -20,4 +19,5 @@ jobs:
       CLIENT_ID: ${{ vars.CLIENT_ID }}
       TENANT_ID: ${{ vars.TENANT_ID }}     
     secrets:
+      environment: production
       envSecret: ${{ secrets.DEPLOY_SECRET }}
