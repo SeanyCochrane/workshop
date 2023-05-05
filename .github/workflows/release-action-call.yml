@@ -9,8 +9,8 @@ permissions:
   contents: write
 jobs:
   Release-solution-contoso_university_core:
-    uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
     environment: production
+    uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
     with:
       #You can specify the solution name here
       solution_name: contoso_university_core
