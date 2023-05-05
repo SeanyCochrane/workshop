@@ -25,17 +25,21 @@ on:
        default: solutions/
 env:
 #edit your values here
-  ENVIRONMENT_URL: 'https://org56bc8f2e.crm11.dynamics.com/'
-  CLIENT_ID: ${{ vars.CLIENT_ID }}
-  TENANT_ID: ${{ vars.TENANT_ID }}
+ # ENVIRONMENT_URL: 'https://org56bc8f2e.crm11.dynamics.com/'
+ # CLIENT_ID: ${{ vars.CLIENT_ID }}
+ # TENANT_ID: ${{ vars.TENANT_ID }}
 permissions:
   contents: write
 jobs:
   export-from-dev:
     runs-on: windows-latest
+    environment: production
     # or you can say runs-on: ubuntu-latest
     env:
       RUNNER_DEBUG: 1
+      ENVIRONMENT_URL: 'https://org56bc8f2e.crm11.dynamics.com/'
+      CLIENT_ID: ${{ vars.CLIENT_ID }}
+      TENANT_ID: ${{ vars.TENANT_ID }}
 
     steps:
     - uses: actions/checkout@v2
