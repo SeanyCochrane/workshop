@@ -19,5 +19,4 @@ jobs:
       CLIENT_ID: ${{ vars.CLIENT_ID }}
       TENANT_ID: ${{ vars.TENANT_ID }}     
     secrets:
-      environment: production
       envSecret: ${{ secrets.DEPLOY_SECRET }}
